@@ -48,7 +48,7 @@ async function createAccount(){
             showError("Login successful")
             localStorage.setItem("user-data",JSON.stringify(user))
             status=0
-            window.location.href="../index.html"
+            window.location.href="../danshboard.html"
         }else{
             showError("Incorrect email/password")
         }

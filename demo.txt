@@ -1,0 +1,54 @@
+IMAGES URL 
+
+Background img  	         https://desktime.com/static/web/_common/intro-background.png    
+Demo img                     https://desktime.com/static/web/demo/demo-of-desktime.png  
+
+Demo account                 https://desktime.com/static/web/demo/magnify.svg    
+Live demo    	             https://desktime.com/static/web/demo/chat.svg  
+Webinar   	                 https://desktime.com/static/web/demo/webinar.svg  
+Signup   	                 https://desktime.com/static/web/demo/form.svg  
+
+Desk time for team           https://desktime.com/static/web/demo/yt-dt-teams.png   
+Youtube                      https://desktime.com/bs4/images/play.png?2e458922cbc0b6b6a3ee465cfc50afdd 
+
+Desk time fo employee        https://desktime.com/static/web/demo/yt-dt-employees.png   
+
+Desk time for freelancer     https://desktime.com/static/web/demo/yt-dt-freelancers.png  
+
+Captera                      https://desktime.com/static/web/_common/ratings/capterra-white-logo.svg
+CROWD                        https://desktime.com/static/web/_common/ratings/g2-crowd-white-logo.svg  
+SOFTWARE ADVICE 	         https://desktime.com/static/web/_common/ratings/software-advice-white-logo.svg  
+
+SELF GUIDE DEMO 	         https://desktime.com/static/web/demo/notebook.png
+
+
+Abhilash                     https://desktime.com/static/web/testimonial-images/abhilash-subhash.png
+Barrett                      https://desktime.com/static/web/testimonial-images/amtec.png
+Mario                        https://desktime.com/static/web/testimonial-images/monteloeder.png
+Rizah                        https://desktime.com/static/web/testimonial-images/rizah.png
+VM samir                     https://desktime.com/static/web/testimonial-images/samir.jpg
+Tony wilson                  https://desktime.com/static/web/testimonial-images/smart-it.png
+Zack thompson                https://desktime.com/static/web/testimonial-images/thompson-law.png
+Ershadul                     https://desktime.com/static/web/testimonial-images/rise-up-labs.png
+Alsam                        https://desktime.com/static/web/testimonial-images/alsam-hasib.png
+
+Youtube channel link         https://www.youtube.com/channel/UCHMGr8kbfSU2Ler6iBM4b1g
+
+      TODO LIST
+
+---> DAY-2(Demo Page)
+
+1.) Super Quick demo part
+   >> super quick div
+   >> 4 demo card
+2.) Youtube video part
+   >> Team div
+   >> Employee div
+   >> Freelancer div
+
+---> DAY -3(Demo Page)
+1.) Rating & Companies part
+   >> rating div
+   >> Not convinced yet? div
+   >> Trust 
+2.)

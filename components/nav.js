@@ -1,4 +1,4 @@
-function nav(){
+function nav() {
     return `<div>
     <img id = "logo" src="/assets/Screenshot 2022-11-08 194854.png" alt="">
 </div>
