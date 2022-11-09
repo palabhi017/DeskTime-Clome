@@ -3,7 +3,7 @@ function nav(){
     <img id = "logo" src="/assets/Screenshot 2022-11-08 194854.png" alt="">
 </div>
 <div>
-    <a href="">Demo</a>
+    <a href="demo.html">Demo</a>
     <a href="">Feature</a>
     <a href="">Pricing</a>
     <a href="">About Us</a>
