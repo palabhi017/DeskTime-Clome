@@ -1,4 +1,4 @@
-import {msgbox}  from "/components/massagebox.js";
+import msgbox  from "/components/massagebox.js";
 
 let bigmsg = document.getElementById("bigmsg")
 bigmsg.innerHTML = msgbox()

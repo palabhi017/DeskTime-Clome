@@ -33,4 +33,4 @@ const msgbox = ()=>{
 `
 }
 
-export {msgbox} 
+export default msgbox; 
