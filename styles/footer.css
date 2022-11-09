@@ -1,0 +1,33 @@
+#footer{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+}
+
+#footer_child{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 50px;
+
+}
+
+#footer_child>div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#footer_child>div>a:hover{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+
+}
+
+#footer>img{
+    width: 100%;
+    height: 180px;
+    margin-top: 50px;
+}
