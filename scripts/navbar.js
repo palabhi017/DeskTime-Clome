@@ -1,6 +1,6 @@
-setTimeout(() => {
+window.onload=()=>{
 
- isUserAvailable()
+    isUserAvailable()
     // do your all navbar functionalities here 
 
     document.querySelector("#logo").onclick=()=>{
@@ -37,5 +37,10 @@ setTimeout(() => {
         }
       }
 
+}
+
+
+
+ 
+
     
-}, 1000);

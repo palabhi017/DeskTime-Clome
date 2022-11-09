@@ -1,5 +1,6 @@
-setTimeout(() => {
-  //do your work here
+window.onload=()=>{
+
+    //do your work here
 
   let sidebar= document.querySelector("#side_navbar");
   let tabNames = document.querySelectorAll(".navTab>h3");
@@ -80,6 +81,9 @@ setTimeout(() => {
   }
 
 
+}
+  
 
 
-}, 100);
+
+
