@@ -1,0 +1,229 @@
+body{
+    background-image: url("https://desktime.com/static/web/_common/intro-background.png");
+    background-size: 100% 670px;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* <!-- Demo of DeskTime  ------<--BOOK  DEMO --> */
+
+.container{
+    /* margin: auto; */
+    margin-top: 11pc;
+    padding-top:10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border:1px solid black; */
+}
+button{
+    padding:10px;
+    font-weight: bold;
+}
+.demo{
+padding:13px;
+text-align:center;
+font-size: 17px;
+margin:5px;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+border: 1px solid #50565b;
+border-radius: 3px;
+background-color: #4ea819;
+}
+.trial{
+    padding:13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align:center;
+    margin:5px;
+    font-size: 17px;
+    color: #50565b;
+    border: 1px solid #50565b;
+    border-radius: 3px;
+    background-color:white;
+}
+#demotime{
+    width:45%;
+    color: #50565b;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight:400 ;
+    /* border: 1px solid firebrick; */
+}
+#demotime>h1{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+
+/* <!-- Demo 4 cards --> */
+
+#card_div{
+display: flex;
+width: 85%;
+/* border: 1px solid; */
+margin: auto;
+justify-content: space-around;
+gap: 25px;
+margin-top: 13pc;
+padding: 10px;
+text-align: center;
+font-size: 17px;
+color: #2e343a;
+}
+.card>p{
+/* border: 1px solid; */
+height: 9.5pc;
+color: #50565b;
+line-height: 27px;
+font-weight: 490;
+padding-left: 18px;
+padding-right: 18px;
+padding-bottom: 0px;
+}
+.card>img{
+    margin-bottom: 0%;
+}
+.card>h2{
+    margin-top: 0;
+}
+.card>button{
+    color: #50565b;
+    text-align:center;
+    background-color: white;
+    border:1px solid #50565b;
+    border-radius: 3px;
+}
+.card>button:hover{
+    background-color: #f0f1f2;
+    cursor: pointer;
+}
+
+/* <!-- video part --> */
+.video{
+    width:90%;
+    /* border: 1px solid; */
+    display: flex;
+    gap: 3pc;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 5pc;
+    padding-top: 2pc;
+    padding-bottom: 2pc;
+}
+.content_css{
+    width:45%;
+    /* border: 1px solid; */
+    /* padding:10px */
+}
+.content_css>h1{
+    /* padding-left: 0.5pc; */
+    color: #3e4348;
+}
+.content_css>button{
+    /* margin-left: 0.5pc; */
+    margin-top: 1pc;
+}
+.content_css>p{
+    font-size: 17px;
+    font-weight: 480px;
+    color: #50565b;
+    line-height: 30px;
+    margin-bottom: 1%;
+    /* padding-left: 0.5pc; */
+    margin-top: 1%;
+}
+.img_div>iframe{
+    padding-top:5pc;
+    /* border: 1px solid; */
+    border-radius: 3px;
+}
+.shadow{
+    margin-left: 0%;
+    margin-right: 0%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* <!-- Rating Div --> */
+.rating_div{
+background-color: #313940;
+color:white;
+display:flex;
+/* margin-top: 3pc; */
+gap: 30px;
+justify-content: space-around;
+padding: 2pc;
+margin-bottom: 3pc;
+}
+.rate_card{
+   /* border: 1px solid white; */
+   padding: 3pc; 
+   text-align: center;
+}
+
+/* <!-- self guided demo --> */
+#yet{
+display: flex;
+/* border: 1px solid; */
+margin-top: 4pc;
+margin-bottom: 4pc;
+justify-content: space-around;
+}
+#yet_card>h1{
+    color: #2e343a;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#yet_card>p{
+    font-size: 17px;
+    color: #2e343a;
+    font-weight: 490;
+line-height: 30px;
+}
+#yet_card{
+    width:40%;
+    /* border:1px solid firebrick */
+}
+
+/* <!-- DeskTime app --> */
+#green_div{
+    background-color: #4ea819;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-top: 1.5pc;
+    padding-bottom: 2pc;
+}
+#green_div>h1{
+    /* border: 1px solid; */
+    width:50%;
+    /* text-align: center; */
+    margin: auto;
+    font-size: 35px;
+    margin-bottom: 2pc;
+    margin-top:2pc;
+}
+#green_div>button{
+    border: 1px solid white;
+}
+#green_div>button:hover{
+    background-color: white;
+    color: #2e343a;
+    font-weight: 600;
+}
+input[type="text"]{
+    padding: 0.8pc;
+    font-size: 17px;
+    padding-left: 1pc;
+    padding-right: 3pc;
+    border-radius: 2px;
+    border: 0ch;
+    margin-bottom: 1.5pc;
+}
+#green_div>p{
+    width: 35%;
+    margin: auto;
+}
+
