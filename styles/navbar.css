@@ -4,16 +4,22 @@ body{
     font-family: sans-serif;
 
 }
+
+#container{
+    margin-top: 170px;
+}
 #navbar{
     width: 100%;
     height: 110px;
     position: fixed;
     display: flex;
-    top: 0;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
     align-items: center;
     border-top: 5px solid #4EA819;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    z-index: 100;
     
 
 
