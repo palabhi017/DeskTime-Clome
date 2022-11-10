@@ -13,7 +13,7 @@ footer.innerHTML=fot();
 // <!-- import scrolling cards -->
 import msgbox from '/components/massagebox.js';
 
-let scroll_box=document.getElementById('scrolling');
+let scroll_box=document.getElementById('bigmsg');
 scroll_box.innerHTML=msgbox();
 
 
