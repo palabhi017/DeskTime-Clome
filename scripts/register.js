@@ -36,7 +36,11 @@ async function createAccount(){
         email:document.querySelector("#email").value,
         password:document.querySelector("#password").value,
         data:{
-            projects:[]
+            projects:[],
+            at:0,
+            lt:0,
+            ptm:0,
+            ptw:0,
         }
     }
 

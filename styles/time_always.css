@@ -1,0 +1,118 @@
+/* #container{
+    width: 100%;
+    padding: 16px;
+
+} */
+
+#utility{
+    width: 95%;
+}
+
+#stats{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,200px);
+
+    margin-top: 16px;
+    gap: 10px;
+
+}
+#stats>div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 16px;
+    color: #999da1;
+}
+
+#date-sort{
+    display: flex;
+    /* border: 1px solid red; */
+    color: rgb(151, 151, 151);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#date-sort>div{
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 20px;
+}
+
+#date-sort>div>button{
+    margin: auto;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: white;
+    width: 40px;
+}
+
+#date-buttons{
+    border: 1px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+#date-buttons tr td:first-child{
+    background-color: #4EA819;
+    color: white;
+
+}
+#date-buttons tr td{
+   padding: 8px;
+    border: 1px solid black;
+}
+
+#productive-image{
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 16px;
+}
+
+
+
+#productive_apps{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#unproductive_apps{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#neutral_apps{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+h5{
+    color: white;
+    padding: 16px;
+}
+#productive_apps>h5{
+    background-color: #4EA819;
+    
+
+    
+}
+#productive_apps>div{
+padding: 16px 0px;    
+text-align: center;
+}
+
+#unproductive_apps>div{
+    padding: 16px 0px;    
+    text-align: center;
+}
+#neutral_apps>div{
+     padding: 16px 0px;    
+     text-align: center;
+ }
+#unproductive_apps>h5{
+    background-color: #ff4b19;
+}
+
+#neutral_apps>h5{
+    background-color: rgb(123, 131, 135);
+}
+#categories-image{
+    width: 100%;
+    margin-top: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
