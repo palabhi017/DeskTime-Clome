@@ -5,7 +5,7 @@ function nav(){
 <div>
     <a href="demo.html">Demo</a>
     <a href="">Feature</a>
-    <a href="">Pricing</a>
+    <a href="price.html">Pricing</a>
     <a href="">About Us</a>
     <a href="">FAQ</a>
     <a href="">Blog</a>
