@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"> </script>
+    <style>
+
+      .card{
+        width: 40%;
+        height: auto;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        word-spacing: 2px;
+    } 
+    .card_header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: green;
+         font-size: 25px;
+       font-family: Arial, Helvetica, sans-serif;
+        color: white;
+
+    }
+    .card_header p,
+    .card_header i{
+        margin: 10px; 
+        cursor: pointer;  
+    }
+
+    .card_body{
+        width: 100%;
+        height: auto;
+    }
+    .card_body h2,
+    .card_body p{
+        line-height:normal;
+        margin: 20px 10px;
+       color: rgb(91, 97, 101);
+    }
+    .card_body h2{
+        font-weight: lighter;
+    }
+    .card_body img{
+        width: 80%;
+        margin: 10px 10%;
+    }
+    .card_footer{
+        width: 100%;
+        height: auto;
+        border-top: 1px solid rgb(235,236,236);
+        text-align: end;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .card_footer > .close{
+        padding: 11px 17px;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid black;
+    }
+    .card_footer > .upgrade{
+        padding: 11px 17px;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+        border: none;
+       margin: 15px 20px;
+        
+    }
+
+
+    /* popup here */
+
+    .popup .overlay{
+        position: fixed;
+        top: 0px;
+        left: 0%;
+        /* width: 100vw; */
+        /* height: 100vh; */
+        background: rgba(0,0,0,0.7);
+        z-index: 1;
+        display: none;
+    }
+    /* .popup .content{
+        position: absolute;
+        top: -105%;
+        left: 0%;
+        transition: translate(80%,110%) scale(0);
+        z-index: 2;
+    }
+    .popup.active .overlay{
+        display: block;
+    }
+    .popup.active .content{
+        transition: all 1000ms ease-in-out;
+        transform: translate(80%,110%) scale(1);
+    }  */
+
+    </style>
+</head>
+<body>
+    <!-- 1st card -->
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="card content"> 
+            <div class="card_header">
+                <p>Work Schedules</p>
+                <i class="fa-solid fa-xmark" onclick="toggle_bnt()"></i>
+            </div>
+            <div class="card_body">
+                <h2>You need upgrade to <b>Premium plan</b> to use this feature</h2>
+                <p>Work schedules offer the option to add specific workdays for each of your employees or teams, create night shifts and multiple shifts on the same day.</p>
+                <p>View the work schedule of your team members for the day, week, or month here.</p>
+                <p>Watch the video below to learn more about this section and how to create a shift. </p>
+                
+                <a href="https://www.youtube.com/watch?v=w1qJcs1Nb_o"><img src="https://desktime.com/assets/img/schedules/youtube_video.png" alt=""></a>
+            </div>
+            <div class="card_footer">
+                <button class="close">CLOSE</button>
+                <button class="upgrade">UPGRADE</button>
+            </div>
+
+        </div>
+    </div>
+    <button onclick="toggle_bnt()">show popup</button>
+
+    <!-- 2nd card -->
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="card content"> 
+            <div class="card_header">
+                <p>Booking</p>
+                <i class="fa-solid fa-xmark" onclick="toggle_bnt()"></i>
+            </div>
+            <div class="card_body">
+                <h2>You need upgrade to <b>Premium plan</b> to use this feature</h2>
+                <p>The Booking feature can be used as a desk or meeting room booking system, as well as for parking spaces, office gadgets, vehicles, different amenities, and much more.</p>
+                <p>It's the best way to manage shared and hybrid workspaces.</p>
+                <p>All bookings are updated in real-time and can be viewed from a single booking grid so everybody knows what's going on at any given time. </p>
+                
+                <a href="https://www.youtube.com/watch?v=w1qJcs1Nb_o"><img src="	https://desktime.com/assets/img/upgrade-popups/booking.png" alt=""></a>
+            </div>
+            <div class="card_footer">
+                <button class="close">CLOSE</button>
+                <button class="upgrade">UPGRADE</button>
+            </div>
+
+        </div>
+    </div>
+    <br>
+
+    <!-- 3rd card -->
+
+    <div class="popup" id="popup-3">
+        <div class="overlay"></div>
+        <div class="card content"> 
+            <div class="card_header">
+                <p>Absence Calendar</p>
+                <i class="fa-solid fa-xmark" onclick="toggle_bnt()"></i>
+            </div>
+            <div class="card_body">
+                <h2>You need upgrade to <b>Premium plan</b> to use this feature</h2>
+                <p>The Absence calendar offers the possibility to plan your days out of office, be it a vacation, business trip or a sickness.</p>
+                <p>Add an absence period here, mark what type of absence it is and let your teammates know when you will not be available. DeskTime will know not to track these days as missed.</p>
+                <p>For a more detailed guide, watch the video below! </p>
+                
+                <a href="https://www.youtube.com/watch?v=w1qJcs1Nb_o"><img src="	https://desktime.com/assets/img/yt_covers/absence.png" alt=""></a>
+            </div>
+            <div class="card_footer">
+                <button class="close">CLOSE</button>
+                <button class="upgrade">UPGRADE</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script > 
+
+ function toggle_bnt(){
+    document.getElementById("popup-1").classList.toggle("active");
+ }
+</script>
+</html>

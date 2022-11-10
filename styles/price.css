@@ -1,5 +1,5 @@
 #container{
-    /* width: 100%; */
+    width: 100%;
 }
 #best_price {
     width: 100%;
@@ -74,6 +74,7 @@
  /* fixed height */
 #pro, #enterprise{
     height:430px;
+    /* min-height: 430px; */
 }
 #pro_1, #premium_1, #enterprise_1{
     width: 100%;
@@ -172,24 +173,41 @@
     height: auto;
     /* border: 1px solid red; */
 }
+#comparision_container{
+    width: 100%;
+    background-color: #f5f5f6;
+    
+}
 #comparision{
     width: 70%;
     height: auto;
     /* border: 1px solid green; */
     margin: auto;
+    padding:30px 0px ;
 }
-#comparision > div >h2{
+#comparision > div >h1{
    text-align: center;
 }
-
-
-table>thead>tr>th{
-    font-size:small ;
-    /* border: 1px solid green; */
+.content-table{
+    width: 100%;
+    border-collapse: collapse;
 
 }
 
-table>tbody>tr>td{
-    font-size: x-small;
+.content-table>thead>tr{
+    background-color: rgb(161,163,169);
+    font-size:larger ;
+    font-weight: bold;
+    text-align: left;
+
+}
+.content-table th{
+    padding: 20px 30px;
+}
+.content-table td{
+    padding: 0px 30px;
+}
+.content-table tr{
+    border-bottom: 1px solid ;
 }
 
