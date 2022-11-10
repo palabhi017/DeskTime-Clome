@@ -1,0 +1,120 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* export_Div */
+#export{
+    margin: auto;
+    width: 90%;
+    font-size: 14px;
+    /* border: 1px solid; */
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 1.2pc;
+    color:#4f5255;
+    line-height: 1.5pc;
+}
+#export_img{
+    margin-top: 5pc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+}
+#export_para{
+    /* border: 1px solid; */
+    width: 50%;
+}
+.head{
+    font-size: 29px;
+    color: #50565b;
+}
+.head2{
+    font-size: 23px;
+    color: #50565b;
+}
+.demo{
+    margin-top:1pc;
+   color: white;
+   background-color: #4ea819;
+   border: 1px solid grey;
+   padding: 0.6pc;
+   border-radius:3px;
+   font-weight: 540;
+   margin-right: 0.2pc;
+    }
+    .demo:hover{
+        cursor: pointer;
+        background-color: #3c8f0c;
+    }
+.trial{
+    font-weight: 540;
+    color: rgb(73, 68, 68);
+    background-color: white;
+    border: 1px solid grey;
+    padding:0.6pc;
+    border-radius:3px;
+}
+
+/* generate/history of export */
+#generate_history{
+    font-size: 14px;
+    width: 90%;
+    /* border: 1px solid; */
+    margin: auto;
+    color: #4f5255;
+}
+#export_btn{
+    color: #4ea819;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #4ea819;
+}
+#generate_history>button{
+    border: 0;
+    background-color: white;
+    color: #686b6d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#generate_history>button:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #a9abac;
+}
+#card{
+    /* width:90%; */
+    /* margin: auto; */
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.3pc;
+}
+.generate{
+    border: 1px solid #e7e7e8;
+    border-radius: 3px;
+    display: flex;
+    line-height: 20px;
+    /* height: 170px; */
+}
+.generate:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.gen_green{
+    color: #4ea819;
+    font-size: 15px;
+    margin-top: 1pc;
+    margin-bottom: 1pc;
+}
+.img{
+    background-color: #4ea819;
+    padding:0.2pc;
+}
+.gen_data{
+    padding: 10px;
+    font-size: 13px;
+}
+.img img{
+    margin-top: 2.5pc;
+}
+
+
