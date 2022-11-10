@@ -193,8 +193,10 @@ line-height: 30px;
     color: white;
     text-align: center;
     padding: 20px;
-    padding-top: 1.5pc;
-    padding-bottom: 2pc;
+    padding-top: 2.5pc;
+    margin-top: 3pc;
+    margin-bottom: 0%;
+    padding-bottom: 4pc;
 }
 #green_div>h1{
     /* border: 1px solid; */
@@ -220,7 +222,7 @@ input[type="text"]{
     padding-right: 3pc;
     border-radius: 2px;
     border: 0ch;
-    margin-bottom: 1.5pc;
+    margin-bottom: 2pc;
 }
 #green_div>p{
     width: 35%;
