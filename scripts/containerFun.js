@@ -41,8 +41,8 @@ window.onload=()=>{
   document.querySelector("#menu").onclick=()=>{
 
     if(toggle==0){
-        sidebar.style.transition="max-Width 0.2s";
-        sidebar.style.maxWidth="70px";
+     sidebar.style.animation="shrink 0.2s"
+     sidebar.style.maxWidth="70px"
         tabNames.forEach(el => {
     
             el.style.display="none"
@@ -59,8 +59,8 @@ window.onload=()=>{
         
     }else{
 
-        sidebar.style.maxWidth="300px";
-        sidebar.style.transition="max-Width 0.2s";
+      sidebar.style.animation="expand 0.2s"
+      sidebar.style.maxWidth="300px"
         tabNames.forEach(el => {
     
             el.style.display="block"

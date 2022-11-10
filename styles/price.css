@@ -26,10 +26,10 @@
     
 }
 #calculator{
-    width: 50%;
+    width: 100%;
     height: auto;
     display: flex;
-    margin-left:40%;
+    justify-content: center;
     /* border: 1px solid red; */
    
 }
@@ -43,6 +43,7 @@
     height: 30px;
     border-collapse: collapse;
 }
+
 #best_value_container{
     width: 100%;
     height: auto;
@@ -75,10 +76,12 @@
     height:430px;
 }
 #pro_1, #premium_1, #enterprise_1{
-    width: fit-content;
+    width: 100%;
     height: auto;
     text-align: center;
     font-size: x-small;
+    margin: auto;
+    /* border: 1px solid red; */
     font-family: Arial, Helvetica, sans-serif;
     /* border: 2px solid red; */
 }

@@ -120,6 +120,7 @@
     grid-template-columns: repeat(3,100%);
     gap: 15px;
     height: 80%;
+    scroll-behavior: smooth;
     margin-top: 30px;
     width: 86%;
 }
