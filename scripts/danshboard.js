@@ -1,8 +1,14 @@
 import container from "../components/container.js";
+import exportPage from "../components/exportPage.js";
+
 import fot from "../components/fot.js";
 import ScriptLoader from "../components/script-loader.js";
 import timeAlways from "../components/time-always-comp.js";
 import utility from "../components/utility-tab.js";
+
+let wsTogggle = 0
+let acTogggle = 0
+let bTogggle = 0
 
 
 
@@ -21,6 +27,8 @@ desktop()
 
 
 
+
+close()
 document.querySelector("#desktime").onclick=(event)=>{
     content.innerHTML=""
     content.innerHTML=timeAlways()
@@ -29,15 +37,67 @@ document.querySelector("#desktime").onclick=(event)=>{
   }
   document.querySelector("#projects").onclick=(event)=>{
   }
+
+
+
   document.querySelector("#work-sch").onclick=(event)=>{
+    wsTogggle=1
+    if(bTogggle==1){
+        document.getElementById("popup-2").classList.toggle("active");
+        bTogggle=0
+
+    }
+
+    if(acTogggle==1){
+        document.getElementById("popup-3").classList.toggle("active");
+        acTogggle=0
+
+    }
+    
+
+    document.getElementById("popup-1").classList.toggle("active");
+
   }
   document.querySelector("#booking").onclick=(event)=>{
+    bTogggle=1
+
+    if(wsTogggle==1){
+        document.getElementById("popup-1").classList.toggle("active");
+        wsTogggle=0
+
+    }
+
+    if(acTogggle==1){
+        document.getElementById("popup-3").classList.toggle("active");
+        acTogggle=0
+
+    }
+
+    document.getElementById("popup-2").classList.toggle("active");
+
   }
   document.querySelector("#ac").onclick=(event)=>{
+    acTogggle=1
+
+    if(wsTogggle==1){
+        document.getElementById("popup-1").classList.toggle("active");
+        wsTogggle=0
+
+    }
+
+    if(bTogggle==1){
+        document.getElementById("popup-2").classList.toggle("active");
+        bTogggle=0
+
+    }
+
+    document.getElementById("popup-3").classList.toggle("active");
+
   }
   document.querySelector("#reports").onclick=(event)=>{
   }
   document.querySelector("#exports").onclick=(event)=>{
+    exports()
   }
   document.querySelector("#settings").onclick=(event)=>{
   }
@@ -104,3 +164,47 @@ function appendData(){
 
 }
   }
+
+  function exports(){
+    content.innerHTML=""
+    content.innerHTML=exportPage()
+    document.querySelector("#utility-1").innerHTML=utility()
+    document.querySelector("#utility-1").style.width="95%"
+    document.querySelector("#utility-1").style.margin="auto"
+
+  }
+
+
+  function close(){
+    document.querySelector("#pop1-close").onclick=()=>{
+        wsTogggle=0
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+    document.querySelector("#pop2-close").onclick=()=>{
+      bTogggle=0
+
+        document.getElementById("popup-2").classList.toggle("active");
+    }
+    document.querySelector("#pop3-close").onclick=()=>{
+        acTogggle=0
+        document.getElementById("popup-3").classList.toggle("active");
+    }
+    document.querySelector("#pop1-cross").onclick=()=>{
+        wsTogggle=0
+
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+    document.querySelector("#pop2-cross").onclick=()=>{
+        bTogggle=0
+
+        document.getElementById("popup-2").classList.toggle("active");
+    }
+    document.querySelector("#pop3-cross").onclick=()=>{
+        acTogggle=0
+
+        document.getElementById("popup-3").classList.toggle("active");
+    }
+
+  }
+
+ 
