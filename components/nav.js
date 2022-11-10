@@ -7,7 +7,7 @@ function nav(){
     <a href="">Feature</a>
     <a href="price.html">Pricing</a>
     <a href="">About Us</a>
-    <a href="">FAQ</a>
+    <a href="faq.html">FAQ</a>
     <a href="">Blog</a>
     <Button id="login_btn">LOGIN</Button>
     <Button id="signup_btn">SIGN UP</Button>
