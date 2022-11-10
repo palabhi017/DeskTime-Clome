@@ -169,6 +169,7 @@ function appendData(){
     content.innerHTML=""
     content.innerHTML=exportPage()
     document.querySelector("#utility-1").innerHTML=utility()
+    document.querySelector("#footer").innerHTML=fot()
     document.querySelector("#utility-1").style.width="95%"
     document.querySelector("#utility-1").style.margin="auto"
 
