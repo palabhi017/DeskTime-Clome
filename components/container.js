@@ -1,5 +1,5 @@
-function container(){
-    return ` <div id="container">
+function container() {
+  return ` <div id="container">
 
     <div id="side_navbar">
 
@@ -12,28 +12,36 @@ function container(){
         <h3>My Dashboard</h3>
        </div>
 
-       <div class="navTab" id="desktime">
+       <div class="navTab" id="projects">
         <i class="fa-solid fa-list-check"></i>
                 <h3>Projects</h3>
        </div>
        
-       <div class="navTab" id="desktime">
+       <div class="navTab" id="work-sch">
         <i class="fa-solid fa-clock"></i>
-        <h3>Work Schedules</h3>
+        <h3>Work Schedules </h3>
+        <i class="fa-solid fa-star"></i>
        </div>
-       <div class="navTab" id="desktime">
-        <i class="fa-solid fa-ticket"></i>            <h3>Booking</h3>
+       <div class="navTab" id="booking">
+        <i class="fa-solid fa-ticket"></i> 
+        <h3>Booking</h3>
+        <i class="fa-solid fa-star"></i>
        </div>
-       <div class="navTab" id="desktime">
-        <i class="fa-regular fa-calendar"></i>            <h3>Absence Calender</h3>
+       <div class="navTab" id="ac">
+        <i class="fa-regular fa-calendar"></i>
+        <h3>Absence Calender</h3>
+        <i class="fa-solid fa-star"></i>
        </div>
-       <div class="navTab" id="desktime">
-        <i class="fa-regular fa-flag"></i>            <h3>Reports</h3>
+       <div class="navTab" id="reports">
+        <i class="fa-regular fa-flag"></i> 
+        <h3>Reports</h3>
        </div>
-       <div class="navTab" id="desktime">
-        <i class="fa-solid fa-file-export"></i>            <h3>Exports</h3>
+       <div class="navTab" id="exports">
+        <i class="fa-solid fa-file-export"></i>          
+          <h3>Exports</h3>
+          
        </div>
-       <div class="navTab" id="desktime">
+       <div class="navTab" id="settings">
         <i class="fa-solid fa-gear"></i>            <h3>Settings</h3>
        </div>
 
@@ -74,6 +82,8 @@ function container(){
 
         <div id="content">
 
+       
+
 
         </div>
 
@@ -82,10 +92,11 @@ function container(){
 
     </div>
 
+   
 
 
 
-</div>`
+</div>`;
 }
 
-export default container
+export default container;

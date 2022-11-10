@@ -1,0 +1,45 @@
+#time-always-tab{
+    width: 100%;
+    padding: 16px 16px;
+    background-color:deepskyblue;
+    color: white;
+
+}
+
+
+
+#time-always-tab>div:nth-child(1){
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#time-always-tab>div:nth-child(1)>div{
+    width: 50%;
+    display: flex;
+    /* border: 1px solid red; */
+    gap: 5px;
+
+}
+
+#time-always-tab>div:nth-child(2){
+    margin-top: 3px;
+}
+
+#time-always-tab>div:nth-child(2)>button{
+    padding: 6px;
+    background-color: transparent;
+    border: 2px white solid;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#time-always-tab>div:nth-child(2)>button:hover{
+
+    background-color: white;
+    color: deepskyblue;
+
+}
+
