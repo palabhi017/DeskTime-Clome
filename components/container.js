@@ -1,5 +1,76 @@
 function container() {
   return ` <div id="container">
+  <div class="popup" id="popup-3">
+  <div class="overlay"></div>
+  <div class="card content"> 
+      <div class="card_header">
+          <p>Absence Calendar</p>
+          <i class="fa-solid fa-xmark" id="pop3-cross"></i>
+      </div>
+      <div class="card_body">
+          <h2>You need upgrade to <b>Premium plan</b> to use this feature</h2>
+          <p>The Absence calendar offers the possibility to plan your days out of office, be it a vacation, business trip or a sickness.</p>
+          <p>Add an absence period here, mark what type of absence it is and let your teammates know when you will not be available. DeskTime will know not to track these days as missed.</p>
+          <p>For a more detailed guide, watch the video below! </p>
+          
+          <a href="https://www.youtube.com/watch?v=w1qJcs1Nb_o"><img src="	https://desktime.com/assets/img/yt_covers/absence.png" alt=""></a>
+      </div>
+      <div class="card_footer">
+          <button class="close" id="pop3-close">CLOSE</button>
+          <button class="upgrade">UPGRADE</button>
+      </div>
+
+  </div>
+</div>
+
+  <div class="popup" id="popup-2">
+  <div class="overlay"></div>
+  <div class="card content"> 
+      <div class="card_header">
+          <p>Booking</p>
+          <i class="fa-solid fa-xmark" id="pop2-cross"></i>
+      </div>
+      <div class="card_body">
+          <h2>You need upgrade to <b>Premium plan</b> to use this feature</h2>
+          <p>The Booking feature can be used as a desk or meeting room booking system, as well as for parking spaces, office gadgets, vehicles, different amenities, and much more.</p>
+          <p>It's the best way to manage shared and hybrid workspaces.</p>
+          <p>All bookings are updated in real-time and can be viewed from a single booking grid so everybody knows what's going on at any given time. </p>
+          
+          <a href="https://www.youtube.com/watch?v=w1qJcs1Nb_o"><img src="	https://desktime.com/assets/img/upgrade-popups/booking.png" alt=""></a>
+      </div>
+      <div class="card_footer">
+          <button class="close" id="pop2-close">CLOSE</button>
+          <button class="upgrade">UPGRADE</button>
+      </div>
+
+  </div>
+</div>
+
+  
+  <div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="card content"> 
+      <div class="card_header">
+          <p>Work Schedules</p>
+          <i class="fa-solid fa-xmark" id="pop1-cross"></i>
+      </div>
+      <div class="card_body">
+          <h2>You need upgrade to <b>Premium plan</b> to use this feature</h2>
+          <p>Work schedules offer the option to add specific workdays for each of your employees or teams, create night shifts and multiple shifts on the same day.</p>
+          <p>View the work schedule of your team members for the day, week, or month here.</p>
+          <p>Watch the video below to learn more about this section and how to create a shift. </p>
+          
+          <a href="https://www.youtube.com/watch?v=w1qJcs1Nb_o"><img src="https://desktime.com/assets/img/schedules/youtube_video.png" alt=""></a>
+      </div>
+      <div class="card_footer">
+          <button id="pop1-close" class="close">CLOSE</button>
+          <button class="upgrade">UPGRADE</button>
+      </div>
+
+  </div>
+</div>
+
+
 
     <div id="side_navbar">
 

@@ -11,6 +11,9 @@
     display: flex;
 }
 
+body{
+    position: relative;
+}
 
 #side_navbar{
     width: 300px;
