@@ -205,7 +205,7 @@ padding-left: 2pc;
     color: white;
     /* margin-left: 1pc; */
 }
-.close{
+.close-view-card{
     color: white;
     /* float: right; */
     font-size: 30px;
@@ -213,7 +213,7 @@ padding-left: 2pc;
     font-weight: bold;
     margin-top: 1pc;
 }
-.close:hover,.close:focus{
+.close-view-card:hover,.close-view-card:focus{
     color: rgb(226, 222, 222);
     text-decoration: none;
     cursor: pointer;
