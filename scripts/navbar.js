@@ -20,6 +20,7 @@ window.onload=()=>{
 
         }else{
             window.location.href="../danshboard.html"
+            // setUserArrivalTime()
 
         }
     }
@@ -36,6 +37,9 @@ window.onload=()=>{
             
         }
       }
+
+
+    
 
 }
 

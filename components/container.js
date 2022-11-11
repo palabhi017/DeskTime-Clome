@@ -1,5 +1,44 @@
 function container() {
   return ` <div id="container">
+
+  <div class="popup1" id="create-card">
+  <div class="overlay1"></div>
+  <div class="card-new content1"> 
+      <div class="card_header1">
+          <p>Create a project</p>
+          <i class="fa-solid fa-xmark" id="create-close-cross"></i>
+      </div>
+      <div class="card_body-new">
+          <label for="">Project name</label>
+          <input type="text" id="pn">
+
+          <label for="">Project hour rate</label>
+          <div class="input-details">
+              <div>INR</div>
+              <input type="text" id="phr">
+
+          </div>
+          <label for="">Estimate costs</label>
+          <div class="input-details">
+              <div>INR</div>
+              <input type="text" id="ec">
+
+          </div>
+          <label for="">Estimate hours</label>
+          <div class="input-details">
+              <div>h</div>
+              <input type="text" id="eh">
+
+          </div>
+      </div>
+      <div class="card_footer1">
+          <button class="close" id="create-close">CANCEL</button>
+          <button class="upgrade" id="create-new-btn">CREATE</button>
+      </div>
+
+  </div>
+</div>
+
   <div class="popup" id="popup-3">
   <div class="overlay"></div>
   <div class="card content"> 
