@@ -146,10 +146,81 @@
     justify-content: space-between;
     gap: 20px;
 }
+
 #clientbox>div{
   background-color: white;
-  height: 400px;
-  
+  /* height: 400px; */
+  padding: 7px;
+}
+#clientbox>div>p{
+    font-size: 12px;;
+    text-align: center;
+    font-weight: 590;
+    color: #5fb92a;
+    margin-top: 0.8pc;
+    /* margin-bottom: 0pc; */
+}
+#clientbox>div>p:hover{
+    color: #626465;
+    text-decoration: underline;
+    text-decoration-color: #626465;
+    cursor: pointer;
+    text-decoration-thickness:1px;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0%;
+    align-item:center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.4);
+
+}
+
+.popup_content{
+    background-color: #fefefe;
+    margin: auto;
+    /* padding: 20px; */
+    border: 1px solid #888;
+    width: 65%;
+}
+.popup_content>div>img{
+    margin: 1pc;
+}
+.span_div{
+background-color: #5fb92a;
+padding: 0.3pc;
+display: flex;
+justify-content:space-between;
+padding-left: 2pc;
+}
+.span_div>h2{
+    color: white;
+    /* margin-left: 1pc; */
+}
+.close{
+    color: white;
+    /* float: right; */
+    font-size: 30px;
+    margin-right: 1pc;
+    font-weight: bold;
+    margin-top: 1pc;
+}
+.close:hover,.close:focus{
+    color: rgb(226, 222, 222);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr{
+    opacity: 0.4;
 }
 #clientdata{
     height: auto;
@@ -161,9 +232,18 @@
     gap: 20px;
 }
 #clientdata>div{
-  background-color: white;
-  height: 400px;
+    padding: 10px;
+    background-color: white;
+  /* height: 400px; */
   
+}
+#clientdata>div>p{
+    color: #70777b;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 580;
+    padding-top: 0.8pc;
+    padding-bottom: 0.8pc;
 }
 #product{
     height: auto;
@@ -181,4 +261,11 @@
 }
 #product>div>img{
     width: 100%;
+}
+@media all and (min-width:500px) and (max-width:1050px){
+    #clientbox div img{
+        width: 100%   } 
+        #clientdata div img{
+            width:70%
+        }
 }
