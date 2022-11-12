@@ -228,4 +228,176 @@ input[type="text"]{
     width: 35%;
     margin: auto;
 }
-
+/* MEDIUM SCREEN */
+@media all and (min-width:750px) and (max-width:1080px){
+   .container{
+    margin:auto;
+    width: 80%;
+    margin-top: 8pc;
+    padding-top:0px;
+    display:flex;
+    flex-direction: column-reverse;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 2pc;
+   }
+    .container>div>img{
+        width:90%;
+        margin-top: 1pc;
+    }
+    #demotime{
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid;
+        margin-top: 0px;
+    }
+    #demotime>h1{
+        font-size: 2.8pc;
+        line-height:3.5pc;
+    }
+    #card_div{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        /* border: 1px solid; */
+        /* margin: auto; */
+        /* margin-top: 2pc; */
+     
+    }
+    .card>button{
+            margin-top: 0px;
+    }
+    .card>p{
+                margin-bottom: 0%;
+                /* border: 1px solid; */
+    }
+    #demotime{
+    /* border: 1px solid; */
+    width: 80%;
+    margin: auto;
+    }
+    .video{
+    width:80%;
+    /* border: 1px solid; */
+    display: flex;
+    gap: 0;
+    text-align: center;
+    flex-direction: column;
+    }
+    .content_css{
+    width:100%;
+    /* border: 1px solid; */
+    text-align: center;
+    margin: auto;
+     }
+    .img_div>iframe{
+    padding-top:1pc;
+    /* border: 1px solid; */
+    border-radius: 3px;
+    }
+    .rating_div{
+    background-color: #2a3138;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    }
+    .rate_card{
+       padding: 1pc; 
+       font-size: 19px;
+       text-align: center;
+    }
+    #yet{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #yet_card{
+            width:80%;
+            margin: auto;
+            /* border:1px solid firebrick */
+    }
+    #green_div>h1{
+         width:80%
+    }
+    #green_div>p{
+        width:80%
+    }
+}
+/* SMALL SCREEN */
+@media all and (min-width:585px) and (max-width:753px){
+    .container{
+        margin-top: 8pc;
+        margin-bottom: 7pc;
+        padding-top:10px;
+        display:flex;
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        /* border: 1px solid black; */
+        text-align: center;
+    }
+    #demotime{
+            width: 80%;
+            font-size: 17px;
+            margin: auto;
+    }
+    .container>div>img{
+            width:83%;
+            margin-top: 1pc;
+    }
+    #card_div{
+            display: flex;
+            width: 55%;
+            flex-direction: column;
+            /* border: 1px solid; */
+            margin: auto;
+         
+    }
+     #card_div>div>button{
+            margin-top: 0px;
+    }
+    .video{
+                width:80%;
+                /* border: 1px solid; */
+                display: flex;
+                gap: 0;
+                text-align: center;
+                flex-direction: column;
+    }
+    .content_css{
+                width:100%;
+                text-align: center;
+                margin: auto;
+    }
+    .img_div>iframe{
+                padding-top:1pc;
+                /* border: 1px solid; */
+                border-radius: 3px;
+    }
+    .rating_div{
+                background-color: #2a3138;
+                color:white;
+                display:flex;
+                flex-direction: column;
+    }
+    .rate_card{
+                   padding: 1pc; 
+                   font-size: 19px;
+                   text-align: center;
+    }
+     #yet{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+    }
+    #yet_card{
+                        width:80%;
+                        margin: auto;
+                        /* border:1px solid firebrick */
+    }
+    #green_div>h1{
+    width:90%
+    }
+    #green_div>h1{
+        width: 90%;
+    }
+}

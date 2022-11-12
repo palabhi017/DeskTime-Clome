@@ -89,3 +89,8 @@ body{
     cursor: pointer;
 }
 
+@media all  and (min-width:360px) and (max-width:990px) {
+    #navbar{
+        display: none;
+    }
+}
