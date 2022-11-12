@@ -4,11 +4,11 @@ function nav(){
 </div>
 <div>
     <a href="demo.html">Demo</a>
-    <a href="">Feature</a>
+    <a href="features.html">Feature</a>
     <a href="price.html">Pricing</a>
     <a href="aboutus.html">About Us</a>
     <a href="faq.html">FAQ</a>
-    <a href="">Blog</a>
+    <a href="https://desktime.com/blog/">Blog</a>
     <Button id="login_btn">LOGIN</Button>
     <Button id="signup_btn">SIGN UP</Button>
     <select name="" id="">
