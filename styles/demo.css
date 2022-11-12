@@ -234,24 +234,26 @@ input[type="text"]{
     margin:auto;
     width: 80%;
     margin-top: 8pc;
-    padding-top:10px;
+    padding-top:0px;
     display:flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
+    flex-direction: column-reverse;
+    border: 1px solid black;
     text-align: center;
     margin-bottom: 2pc;
    }
     .container>div>img{
-        width:70%;
+        width:90%;
         margin-top: 1pc;
     }
     #demotime{
-        font-size: 16px;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid;
         margin-top: 0px;
     }
     #demotime>h1{
-        font-size: 2pc;
-        line-height: 40px;
+        font-size: 2.8pc;
+        line-height:3.5pc;
     }
     #card_div{
         display: flex;
@@ -324,10 +326,12 @@ input[type="text"]{
 /* SMALL SCREEN */
 @media all and (min-width:585px) and (max-width:753px){
     .container{
-        margin-top: 5pc;
+        margin-top: 8pc;
+        margin-bottom: 7pc;
         padding-top:10px;
         display:flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
         /* border: 1px solid black; */
         text-align: center;
     }
