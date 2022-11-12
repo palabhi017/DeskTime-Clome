@@ -73,6 +73,7 @@
 
 #productive_apps{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
 }
 #unproductive_apps{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -93,17 +94,66 @@ h5{
 }
 #productive_apps>div{
 padding: 16px 0px;    
-text-align: center;
+display: grid;
+grid-template-columns: repeat(4,1fr);
 }
+
+#productive_apps>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+#productive_apps>div>div>img{
+    width: 20px;
+    height: 20px;
+    scale: 10;
+    margin: auto;
+}
+
 
 #unproductive_apps>div{
     padding: 16px 0px;    
-    text-align: center;
-}
+    display: grid;
+    grid-template-columns: repeat(4,1fr);}
+
+
+#unproductive_apps>div>div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+#unproductive_apps>div>div>img{
+        width: 20px;
+        height: 20px;
+        scale: 10;
+        margin: auto;
+    }
+
+
+
 #neutral_apps>div{
      padding: 16px 0px;    
-     text-align: center;
+     display: grid;
+    grid-template-columns: repeat(4,1fr);
  }
+
+ #neutral_apps>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+#neutral_apps>div>div>img{
+    width: 20px;
+    height: 20px;
+    scale: 10;
+    margin: auto;
+}
+
 #unproductive_apps>h5{
     background-color: #ff4b19;
 }
