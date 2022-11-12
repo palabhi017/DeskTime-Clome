@@ -27,13 +27,14 @@
 #choosedate{
     display: flex;
     width: 35%;
-    
+    border: 1px solid #70777b;
+    border-radius: 4px;
 
 }
 #choosedate>div{
     width: 33.33%;
     padding: 10px;
-    border: 1px solid #70777b;
+    border-right: 1px solid #70777b;
     background-color: white;
     font-weight: bold;
     
@@ -54,6 +55,7 @@
     background-color: white;
     padding: 10px;
     border: 1px solid #70777b;
+    border-radius: 4px;
 }
 #logo{
     height: auto;
@@ -136,6 +138,7 @@
 }
 #level>img{
     width: 100%;
+    height: 100%;
 }
 #clientbox{
     height: auto;
