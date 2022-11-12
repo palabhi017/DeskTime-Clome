@@ -1,6 +1,51 @@
 function container() {
   return ` <div id="container">
 
+  <div class="popup1" id="timer-card">
+  <div class="overlay2"></div>
+  <div class="card-new2 content2"> 
+      <div class="card_header2">
+          <p>Web timer</p>
+          <i class="fa-solid fa-xmark" id="timer-close-cross"></i>
+      </div>
+      <div class="card_body-new2">
+          <label for="">Description</label>
+          <input type="text" id="desc">
+
+          <label for="">Project</label>
+         <select name="" id="select-project">
+          <option value="">Select Project</option>
+         </select>
+          <label for="">Task</label>
+          <div class="input-details">
+              <input type="text" id="task-name">
+
+          </div>
+
+          <label for="">Choose Preferences</label>
+          <select name="" id="select-pref">
+           <option value="">Select Prefernces</option>
+           <option value="productive">Productive</option>
+           <option value="unproductive">Unproductive</option>
+           <option value="neutral">Neutral</option>
+           </select>
+         
+
+      </div>
+      <div class="card_footer2">
+          <button class="close" id="timer-close">STOP</button>
+          <button class="upgrade" id="add-new-btn">ADD</button>
+      </div>
+
+  </div>
+</div>
+
+  <div id="drag">
+  <i id="task" class="fa-solid fa-up-right-from-square"></i>
+  <i id="play" class="fa-solid fa-play"></i>
+  <h3 id="timer"><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></h3>
+
+ </div>
   <div class="popup1" id="create-card">
   <div class="overlay1"></div>
   <div class="card-new content1"> 

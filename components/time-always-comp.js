@@ -37,21 +37,21 @@ function timeAlways(){
 
     <div id="productive_apps">
 
-        <h5>PRODUCTIVE APPS</h5>
+        <h5>PRODUCTIVE APPS &nbsp <span id="pa-time">3 h 45m 6s</span></h5>
         <div> No data collected</div>
 
     </div>
 
     <div id="unproductive_apps">
 
-        <h5>UNPRODUCTIVE APPS</h5>
+        <h5>UNPRODUCTIVE APPS &nbsp <span id="upa-time">3 h 45m 6s</span></h5>
         <div>No data collected</div>
 
     </div>
 
     <div id="neutral_apps">
 
-        <h5>NEUTRAL APPS</h5>
+        <h5>NEUTRAL APPS &nbsp <span id="na-time">3 h 45m 6s</span></h5>
         <div>No data collected</div>
 
     </div>
