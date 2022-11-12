@@ -147,7 +147,7 @@ function desktop() {
       "productivity",
     ];
 
-    let mkid = 0
+    let mkid = 0;
 
     for (let i = 0; i < arr.length; i++) {
       let card = document.createElement("div");
@@ -155,10 +155,10 @@ function desktop() {
       title.innerText = names[i].toLocaleUpperCase();
       let number = document.createElement("h1");
       number.innerText = arr[i];
-      number.setAttribute("id",`${"d"+mkid}`)
+      number.setAttribute("id", `${"d" + mkid}`);
       card.append(title, number);
       stats.append(card);
-      mkid++
+      mkid++;
     }
     console.log("working");
   }
@@ -195,18 +195,66 @@ function projectsFun() {
     document.querySelector("#created-month").innerText = data.ptm;
     document.querySelector("#created-week").innerText = data.ptw;
 
-    // document.querySelector("#project-name").addEventListener("input",function(){
-    //   userData.filter(el=>{
-    //   if(el.name==document.querySelector("#project-name").value){
-    //     console.log(el)
-    //   }
-
-    // })
-    // })
-
     appendProjects(data.projects);
 
     console.log(userData);
+
+    //filter and sort
+
+    document.querySelector("#project-name").addEventListener("input", function () {
+        let x = userData.filter((el) => {
+          if (
+            el.name
+              .toLowerCase()
+              .includes(document.querySelector("#project-name").value)
+          ) {
+            return el;
+          }
+        });
+
+        appendProjects(x);
+      });
+
+
+      document.querySelector("#date-created").addEventListener("input", function () {
+        let x = userData.filter((el) => {
+          if (
+            el.cdate
+              .toLowerCase()
+              .includes(document.querySelector("#date-created").value)
+          ) {
+            return el;
+          }
+        });
+
+        appendProjects(x);
+      });
+
+
+      // document.querySelector("#tasks").addEventListener("input", function () {
+      //  userData.forEach((el) => {
+      //     // console.log(el)
+
+      //   let x = el.tasks.filter(el2=>{
+      //       if (
+      //         el2.taskName
+      //           .toLowerCase()
+      //           .includes(document.querySelector("#tasks").value)
+      //       ) {
+
+
+      //         return el
+      //       }
+
+      //     })
+      //     appendProjects(x);
+
+
+      //   });
+
+
+
+      // });
   }
 
   document.querySelector("#new-project-btn").onclick = () => {
@@ -741,32 +789,38 @@ async function setStats() {
     totalNeutralTime.ts
   );
 
-  let finalProductiveTime = `${proTime.h}h ${proTime.m}m ${proTime.s}s`
-  let finalUnproductiveTime =`${unproTime.h}h ${unproTime.m}m ${unproTime.s}s`
-  let finalNeutralTime = `${neuTime.h}h ${neuTime.m}m ${neuTime.s}s`
-  let finalDeskTime = calculateAccurateTime(proTime.h+unproTime.h+neuTime.h,proTime.m+unproTime.m+neuTime.m,proTime.s+unproTime.s+neuTime.s)
+  let finalProductiveTime = `${proTime.h}h ${proTime.m}m ${proTime.s}s`;
+  let finalUnproductiveTime = `${unproTime.h}h ${unproTime.m}m ${unproTime.s}s`;
+  let finalNeutralTime = `${neuTime.h}h ${neuTime.m}m ${neuTime.s}s`;
+  let finalDeskTime = calculateAccurateTime(
+    proTime.h + unproTime.h + neuTime.h,
+    proTime.m + unproTime.m + neuTime.m,
+    proTime.s + unproTime.s + neuTime.s
+  );
 
-  document.querySelector("#pa-time").innerHTML = finalProductiveTime
-  document.querySelector("#upa-time").innerHTML = finalUnproductiveTime
-  document.querySelector("#na-time").innerHTML = finalNeutralTime
-  document.querySelector("#d2").innerHTML = finalProductiveTime
+  document.querySelector("#pa-time").innerHTML = finalProductiveTime;
+  document.querySelector("#upa-time").innerHTML = finalUnproductiveTime;
+  document.querySelector("#na-time").innerHTML = finalNeutralTime;
+  document.querySelector("#d2").innerHTML = finalProductiveTime;
 
-  document.querySelector("#d3").innerHTML = `${finalDeskTime.h}h ${finalDeskTime.m}m ${finalDeskTime.s}s`
-  document.querySelector("#d4").innerHTML = finalProductiveTime
-  document.querySelector("#d5").innerHTML = finalUnproductiveTime
-  document.querySelector("#d6").innerHTML = (Math.random() * 100).toFixed(1) +" %";
+  document.querySelector(
+    "#d3"
+  ).innerHTML = `${finalDeskTime.h}h ${finalDeskTime.m}m ${finalDeskTime.s}s`;
+  document.querySelector("#d4").innerHTML = finalProductiveTime;
+  document.querySelector("#d5").innerHTML = finalUnproductiveTime;
+  document.querySelector("#d6").innerHTML =
+    (Math.random() * 100).toFixed(1) + " %";
 
-  let productivityPercentage = ((proTime.h*60+proTime.m+(proTime.s/60))/(finalDeskTime.h*60+finalDeskTime.m+(finalDeskTime.s/60)))*100
-  document.querySelector("#d7").innerHTML = productivityPercentage.toFixed(1)+" %"
-
-
+  let productivityPercentage =
+    ((proTime.h * 60 + proTime.m + proTime.s / 60) /
+      (finalDeskTime.h * 60 + finalDeskTime.m + finalDeskTime.s / 60)) *
+    100;
+  document.querySelector("#d7").innerHTML =
+    productivityPercentage.toFixed(1) + " %";
 
   console.log(proTime.h, proTime.m, proTime.s);
   console.log(unproTime.h, unproTime.m, unproTime.s);
   console.log(neuTime.h, neuTime.m, neuTime.s);
-
-  
-
 }
 
 setStats();
