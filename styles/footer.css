@@ -31,3 +31,9 @@
     height: 180px;
     margin-top: 50px;
 }
+
+@media all  and (min-width:360px) and (max-width:990px) {
+    #footer{
+        display: none;
+    }
+}
