@@ -1,6 +1,7 @@
-window.onload=()=>{
 
-    isUserAvailable()
+
+    window.onload=()=>{
+        isUserAvailable()
     // do your all navbar functionalities here 
 
     document.querySelector("#logo").onclick=()=>{
@@ -39,16 +40,5 @@ window.onload=()=>{
       }
 
 
-    
-<<<<<<< HEAD
-}, 1000);
-=======
-
-}
-
-
-
  
-
-    
->>>>>>> 440f8c912520b7d8725ffb3e5f2dd1d3dad55f4b
+    }
