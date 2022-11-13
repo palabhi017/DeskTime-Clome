@@ -1,0 +1,213 @@
+#container{
+    width: 100%;
+}
+#best_price {
+    width: 100%;
+    height: auto;
+    background-color: rgb(245,245,246);
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 40px 30px 10px 30px; */
+    padding: 16px 0px;
+}
+#description{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: small;
+}
+#description > div{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+#description p, #best_price > p{
+    font-size: x-small;
+    line-height: 15px;
+    
+}
+#calculator{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+   
+}
+#best_price > p{
+    text-align: center;
+    margin-left: -30px;
+}
+#monthly, #annual{
+    margin-right: -5px;
+    width: 90px;
+    height: 30px;
+    border-collapse: collapse;
+}
+
+#best_value_container{
+    width: 100%;
+    height: auto;
+    background-color: rgb(235,236,236);
+    padding: 30px 0px;
+}
+#best_value{
+    width: 60%;
+    height: auto; 
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    background-color:rgb(235,236,236);
+}
+#pro, #premium, #enterprise{
+    width: 27%;
+    height: auto;
+    /* border: 1px solid green; */
+    padding: 7px;
+    font-size: small;
+    background-color:white
+}
+ /* fixed height */
+#pro, #enterprise{
+    height:430px;
+    /* min-height: 430px; */
+}
+#pro_1, #premium_1, #enterprise_1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: x-small;
+    margin: auto;
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid red; */
+}
+#pro_1 >h1> img{
+  width: 20%;
+}
+
+#pro_1 button, #premium_1 button, #enterprise_1 button{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    font-size: small;
+}
+
+.tickmark{
+    display: flex;
+    align-items: center;
+    /* border:1px solid red; */
+    font-size: x-small;
+    padding: 0px;
+    
+}
+.fa-solid, .fa-check{
+    margin-right: 3px;
+    color: green;
+}
+#premium_des{
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+    color: white;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#premium_1 >h1> img{
+    width: 20%;
+  }
+#premium_1 button{
+    background-color: green;
+    color: white;
+}
+#enterprise_1 >h1> img{
+    width: 20%;
+  }
+#deskTime_lite{
+    width: 54%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    column-gap: 10px;
+    background-color:white;
+    padding: 10px;
+}
+#deskTime_lite > div{
+    width: 30%;
+    height: auto;
+    /* margin: auto; */
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+#deskTime_lite_1>h2>img{
+    width: 20%;
+}
+#deskTime_lite_3{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+#deskTime_lite_3 button{
+    width: 75px;
+    height: 30px;
+    margin-bottom: 20%;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#highly_rated_globally_trusted{
+    width: 100%;
+}
+#highly_rated_globally_trusted img{
+    width: 100%;  
+}
+#comparision_container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+#comparision_container{
+    width: 100%;
+    background-color: #f5f5f6;
+    
+}
+#comparision{
+    width: 70%;
+    height: auto;
+    /* border: 1px solid green; */
+    margin: auto;
+    padding:30px 0px ;
+}
+#comparision > div >h1{
+   text-align: center;
+}
+.content-table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.content-table>thead>tr{
+    background-color: rgb(161,163,169);
+    font-size:larger ;
+    font-weight: bold;
+    text-align: left;
+
+}
+.content-table th{
+    padding: 20px 30px;
+}
+.content-table td{
+    padding: 0px 30px;
+}
+.content-table tr{
+    border-bottom: 1px solid ;
+}
+

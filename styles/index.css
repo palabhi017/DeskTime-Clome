@@ -1,0 +1,620 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#container{
+    box-sizing: border-box;
+    height: 600px;
+    width: 100%;
+    /* border: 1px solid saddlebrown; */
+    border-radius:0px 0px 30% 30%;
+    
+    background: linear-gradient(to top,#ebecec,#ffffff);
+}
+#maincontent{
+    display: flex;
+}
+#container>div>div{
+    box-sizing: border-box;
+    width: 50%;
+    padding-top: 30px;
+}
+
+#content{
+ 
+ padding-left:8% ;
+}
+#content>h2{
+    font-size: 40px;
+    color: #333c43;
+    
+}
+.bigp{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #475056;
+}
+#content>input{
+    font-size: 17px;
+    color: #475056;
+    width: 45%;
+    padding: 10px 0px 10px 10px; 
+}
+#content>button{
+    width: 40%;
+    padding: 10px 0px 10px 10px; 
+    font-size: 19px;
+    color: aliceblue;
+    background-color: #4ea819;
+    border: none;
+    font-weight: bolder;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.smallp{
+    font-size: 15px;
+    line-height: 7px;
+    color: #475056;
+}
+.smallp>a{
+    color: #333c43;
+    font-weight: bold;
+}
+#promo{
+    padding-left: 10px;
+}
+#promo>iframe{
+    width: 500px;
+    height: 300px;
+}
+#logos{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+#container2{
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+#description{
+   /* border: 1px solid saddlebrown; */
+    width: 70%;
+    padding: 0px 8%;
+}
+#img{
+    width: 30%;
+    padding: 20px;
+}
+
+#subdescrip{
+    width: 100%;
+    display: grid;
+    /* gap: 20px; */
+    /* border: 1px solid saddlebrown; */
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(2,auto);
+}
+#subdescrip>div{
+    margin-left: 20px;
+}
+#subdescrip>div>p{
+    color: #475056;
+    font-size: 15px;
+    
+}
+
+
+#bigmsg{
+    background-color: #f5f5f6;
+    margin-top: 50px;
+    padding: 40px 0px;
+}
+#bigmsg>h1{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+    color: #333c43;
+}
+#msgimg{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    gap: 15px;
+    height: 80%;
+    scroll-behavior: smooth;
+    margin-top: 30px;
+    width: 86%;
+}
+#msgimg::-webkit-scrollbar{
+    display: none;
+}
+#msgimg>div{
+    
+    display: flex;
+}
+#msgimg>div>img{
+    width: 33%;
+    height: 90%;
+}
+#msg{
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    gap: 10px;
+    padding: 0px 100px;
+    
+    background-color: #f5f5f6;
+    /* border: 1px solid saddlebrown; */
+}
+#msg>img{
+    width: 35px;
+    height: 35px;
+    margin-top: 20%;
+    
+}
+#scrollbtn>button{
+    height: 14px;
+    width: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #d3d3d3;
+  border: none;
+}
+#b1{
+    background-color: #333c43;
+}
+#scrollbtn{
+    /* border: 1px solid saddlebrown; */
+    width: 100px;
+    margin: auto;
+}
+
+
+#universal{
+ width: 100%;
+ margin-top: 50px;
+ height: auto;
+ background: linear-gradient(to bottom,#ebecec,#ffffff);
+padding: 50px 100px;
+}
+#universal>h1{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: #333c43;
+    
+}
+#universal>p{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    line-height: 25px;
+    color: #475056;
+}
+#flexi{
+    display: flex;
+    margin-top: 30px;
+}
+#flexi>div{
+    width: 40%;
+}
+#flexi>div h2{
+    font-size: 18px;
+}
+#flexi>div>img{
+    margin-left: 30%;
+    margin-top: 12%;
+}
+#seamless{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 50px 100px;
+    gap: 30px;
+    margin: auto;
+}
+#seamless>div{
+    width: 47%;
+}
+#seamless>div p{
+    margin-top: -10px;
+    line-height: 30px;
+    color: #72797e;
+    font-weight: bold;
+}
+#seamless>div h1{
+    font-size: 35px;
+    color: #333c43;
+}
+#seamless>div>img{
+    margin-top: 20%;
+}
+#integ{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 50px 100px;
+    gap: 30px;
+    margin: auto;
+    background-color: #f5f5f6;
+}
+#integ>div{
+    width: 47%;
+}
+#integ>div p{
+    margin-top: -10px;
+    line-height: 30px;
+    color: #72797e;
+    font-weight: bold;
+}
+#integ>div h1{
+    font-size: 35px;
+    color: #333c43;
+}
+#integ>div button{
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #475056;
+}
+#tracking{
+    height: auto;
+    width: 100%;
+    padding: 40px 0px;
+}
+#tracking>h1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #333c43;
+}
+#tracking>p{
+    width: 53%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: #72797e;
+    font-weight: bold;
+}
+#tracking>div{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 20px;
+}
+#tracking>div>div{
+    width: 30%;
+}
+#tracking>div>div>img:first-child{
+    width: 100%;
+}
+#tracking>div>div>h2{
+    font-size: 22px;
+    color: #333c43;
+}
+#tracking>div>div>span,#tracking>div>div>p{
+    
+    color: #72797e;
+    font-weight: bold;
+}
+#dropdown{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 50px 0px;
+    /* border: 1px solid saddlebrown; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#dropmenu{
+    height: auto;
+    width: 60%;
+    /* border: 1px solid saddlebrown; */
+    margin: auto;
+    margin-top: 50px;
+}
+#dropdown>h1{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    color: #333c43;
+}
+#dropmenu>div{
+    border: 2px solid #d6d8d9;
+    margin-top: 20px;
+    
+    border-radius: 5px;
+    padding-left: 20px;
+}
+#dropmenu>div>p:last-child{
+    display: none;
+    color: #475056;
+}
+#dropmenu>div>p:first-child{
+    font-size: 18px;
+    color: #333c43;
+}
+
+#univ1,#univ2,#univ3,#univ4{
+
+    
+    margin: auto;
+    margin-top: 10px;
+}
+#univ1{
+    width: 70%;
+}
+#univ2{
+    width: 60%;
+}
+#univ3{
+    width: 65%;
+}
+#univ4{
+    width: 30%;
+}
+#univ1>button,#univ2>button,#univ3>button,#univ4>button{
+    padding: 10px 10px;
+    font-size: 17px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ebecec;
+    color: #475056;
+    font-weight: bold;
+}
+#universal>div>button:hover{
+ background-color: #6f777a;
+}
+#green{
+    height: 400px;
+    width: 100%;
+    background-color: #4ea819;
+    padding: 60px 0px;
+}
+#green>h1{
+    color: aliceblue;
+    width: 43%;
+    text-align: center;
+    margin: auto;
+}
+#green>div{
+    
+    width: 40%;
+    
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+#green>div>input{
+    width: 50%;
+    padding: 10px 5px;
+    font-size: 15px;
+    height: auto;
+}
+#green>div>button{
+    width: 40%;
+    padding: 8px 0px;
+    font-size: 17px;
+    color: aliceblue;
+    background-color: #4ea819;
+    border: 2px solid aliceblue;
+}
+#green>p{
+    color: aliceblue;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media all  and (min-width:360px) and (max-width:990px) {
+    
+    #container{
+    height: auto;
+    border-radius:0px;
+    width: 100%;
+    margin: auto;
+        
+    }
+    #maincontent{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    #container>div>div{
+    
+        width: auto;
+        padding-top: 10px;
+        margin: auto;
+    }
+    
+   
+    .bigp{
+        font-size: 3vw;
+        
+    }
+
+    /* my work */
+    #content>input{
+       width: 100%;
+    }
+    #content>button{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 8px;
+       
+    }
+
+    #content{
+        width: 100%;
+        padding-left: 0%;
+        padding: 8px;
+
+        
+    }
+    
+
+
+    #promo{
+        /* padding-left: 10px; */
+        width: 100%;
+        width: auto;
+    }
+    #promo>iframe{
+        width: 100%;
+        height: auto;
+    }
+
+    .smallp{
+        font-size: 15px;
+        line-height: 15px;
+        color: #475056;
+    }
+
+    /* finish */
+    #logos{
+       
+        display: none;
+    }
+
+    #container2{
+       
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #description{
+       /* border: 1px solid saddlebrown; */
+        width: 90%;
+        padding: 0px 8%;
+        margin: auto;
+    }
+    #img{
+        width: 30%;
+        padding: 0px;
+        margin: 10px;
+    }
+    
+#subdescrip>div>p{
+        color: #475056;
+        font-size: 5vw;
+        
+    }
+
+    #universal{
+        width: 100%;
+        padding: 15px 15px;
+       }
+       #universal>h1{
+           width: 100%;
+           
+        }
+       #universal>p{
+           width: 90%;
+           
+       }
+       #flexi{
+           
+           flex-direction: column-reverse;
+       }
+       #flexi>div{
+           width: 90%;
+       }
+       
+       #flexi>div>img{
+           margin-left: 5%;
+           margin-top: 5%;
+           width: 100%;
+       }
+
+    #univ1{
+        width: 90%;
+    }
+    #univ2{
+        width: 90%;
+    }
+    #univ3{
+        width: 90%;
+    }
+    #univ4{
+        width: 90%;
+    }
+    #univ1>button,#univ2>button,#univ3>button,#univ4>button{
+        
+        margin-top: 10px;
+        
+    }
+   #bigmsg{
+       
+        display: none;
+    }
+    #seamless{
+     width: 100%;
+     flex-direction: column  
+    }
+    #seamless>div{
+        width: 90%;
+    }
+     #seamless>div>img{
+        width: 90%;
+    }
+    #integ{
+       
+        flex-direction: column;
+        padding: 5px;
+        
+    }
+    
+    #integ>div>img{
+        width: 90%;
+       
+    }
+    #integ>div{
+        width: 100%;
+    }
+    
+    #green{
+        height: auto;
+        width: 100%;
+        background-color: #4ea819;
+        padding: 10px;
+    }
+    #green>h1{
+        
+        width: 90%;
+       
+    }
+    #green>div{
+        
+        width: 90%;
+        
+       
+    }
+    #green>div>input{
+        width: 90%;
+       
+    }
+    #green>div>button{
+        width: 90%;
+       
+    }
+    #green>p{
+        
+        width: 90%;
+        
+        line-height: 20px;
+    }
+}

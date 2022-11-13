@@ -1,0 +1,97 @@
+.card{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    word-spacing: 2px;
+    z-index: 120;
+} 
+.card_header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+     font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+.card_header p,
+.card_header i{
+    margin: 10px; 
+    cursor: pointer;  
+}
+
+.card_body{
+    width: 100%;
+    height: auto;
+}
+.card_body h2,
+.card_body p{
+    line-height: 20px;
+    margin: 20px 10px;
+    font-size: 14px;
+   color: rgb(91, 97, 101);
+}
+.card_body h2{
+    font-weight: lighter;
+}
+.card_body img{
+    width: 80%;
+    margin: 10px 10%;
+}
+.card_footer{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgb(235,236,236);
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card_footer > .close{
+    padding: 11px 17px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+}
+.card_footer > .upgrade{
+    padding: 11px 17px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+   margin: 15px 20px;
+    
+}
+
+
+/* popup here */
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: -110%;
+    left:35%;
+    transition: translate(0%,125%) scale(0);
+    z-index: 2;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .content{
+    transition: all 700ms ease-in-out;
+    transform: translate(0%,125%) scale(1);
+} 

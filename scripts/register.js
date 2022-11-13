@@ -1,88 +1,73 @@
 import nav from "../components/nav.js";
 import fot from "../components/fot.js";
 
-document.querySelector("#navbar").innerHTML=nav()
-document.querySelector("#footer").innerHTML=fot()
+document.querySelector("#navbar").innerHTML = nav();
+document.querySelector("#footer").innerHTML = fot();
+isUserAvailable();
 
-let userData=[];
+let userData = [];
 
-const BASE_URL ="https://boiling-basin-61695.herokuapp.com"
-getUserBase()
+const BASE_URL = "https://boiling-basin-61695.herokuapp.com";
+getUserBase();
 
-async function getUserBase(){
-
-    let res = await fetch(`${BASE_URL}/users`);
-    let data = await res.json()
-    // console.log(data)
-    userData=data
-    
-
+async function getUserBase() {
+  let res = await fetch(`${BASE_URL}/users`);
+  let data = await res.json();
+  // console.log(data)
+  userData = data;
 }
 
 //write your code here
 let ptoggle = 0;
 
 // event listner on sigup btn
-document.querySelector("#registerBtn").onclick=()=>{
-    createAccount()
-}
-
+document.querySelector("#registerBtn").onclick = () => {
+  createAccount();
+};
 
 //create account after validation
-async function createAccount(){
-    let obj ={
-        name:document.querySelector("#name").value,
-        email:document.querySelector("#email").value,
-        password:document.querySelector("#password").value,
-        data:{
-            projects:[]
-        }
+async function createAccount() {
+  let obj = {
+    name: document.querySelector("#name").value,
+    email: document.querySelector("#email").value,
+    password: document.querySelector("#password").value,
+    projects: [],
+    at: 0,
+    lt: 0,
+    ptm: 0,
+    ptw: 0,
+  };
+
+  if (checkValdation(obj.email, obj.password, obj.name)) {
+    let status = 0;
+
+    for (let i = 0; i < userData.length; i++) {
+      if (userData[i].email == obj.email) {
+        status = 1;
+        break;
+      }
     }
 
-    if(checkValdation(obj.email,obj.password,obj.name)){
-        let status = 0
+    if (status == 1) {
+      showError("Account already exist");
+      status = 0;
+    } else {
+      let res = await fetch(`${BASE_URL}/users`, {
+        method: "POST",
+        body: JSON.stringify(obj),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-     for(let i =0; i<userData.length; i++){
-        if(userData[i].email==obj.email){
-            status=1
-            break
-        }
-     }
-
-        if(status==1){
-            showError("Account already exist")
-            status=0
-        }else{
-            let res = await fetch(`${BASE_URL}/users`,{
-                method:"POST",
-                body:JSON.stringify(obj),
-                headers:{
-                    "Content-Type":"application/json"
-                }
-            })
-    
-            let data = await res.json();
-            console.log(data)
-            window.location.href="../login.html"
-
-        }
-
-       
-
-
-
-    }else{
-        console.log("Validation falied")
-
-
+      let data = await res.json();
+      console.log(data);
+      window.location.href = "../login.html";
     }
-
+  } else {
+    console.log("Validation falied");
+  }
 }
-
-
-
-
-
 
 // Realtime check email validation
 document.querySelector("#email").addEventListener("input", checkEmail);
@@ -126,31 +111,40 @@ function checkP(event) {
 //validation for null value, email and password format
 
 function checkValdation(e, p, cp) {
-    if (e == "" || p == "" || cp == "") {
-      showError("Invalid details");
-    }else if (p.length < 8) {
-      showError(
-        "Password must be of 8 characters including special character,numbers,alphabets"
-      );
-    } else if (ptoggle == 0) {
-      showError(
-        "Password should be in like Captital letters, small letters, special charcters, numbers"
-      );
-    } else {
-      console.log(ptoggle);
-      return true;
-    }
+  if (e == "" || p == "" || cp == "") {
+    showError("Invalid details");
+  } else if (p.length < 8) {
+    showError(
+      "Password must be of 8 characters including special character,numbers,alphabets"
+    );
+  } else if (ptoggle == 0) {
+    showError(
+      "Password should be in like Captital letters, small letters, special charcters, numbers"
+    );
+  } else {
+    console.log(ptoggle);
+    return true;
   }
+}
 
-  //custom alterbox for showing error
+//custom alterbox for showing error
 
-  function showError(error) {
-    let box = document.querySelector("#alertBox");
-    box.style.visibility = "visible";
-    box.innerText = error;
-  
-    setTimeout(function () {
-      box.style.visibility = "hidden";
-      box.innerText = "";
-    }, 2000);
+function showError(error) {
+  let box = document.querySelector("#alertBox");
+  box.style.visibility = "visible";
+  box.innerText = error;
+
+  setTimeout(function () {
+    box.style.visibility = "hidden";
+    box.innerText = "";
+  }, 2000);
+}
+
+function isUserAvailable() {
+  let presence = JSON.parse(localStorage.getItem("user-data")) || 0;
+  if (presence == 0) {
+    return;
+  } else {
+    window.location.href = "../danshboard.html";
   }
+}

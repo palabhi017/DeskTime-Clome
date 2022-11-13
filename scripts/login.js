@@ -4,6 +4,8 @@ import fot from "../components/fot.js";
 document.querySelector("#navbar").innerHTML=nav()
 document.querySelector("#footer").innerHTML=fot()
 
+isUserAvailable()
+
 let userData=[];
 
 const BASE_URL ="https://boiling-basin-61695.herokuapp.com"
@@ -71,4 +73,16 @@ function showError(error) {
       box.style.visibility = "hidden";
       box.innerText = "";
     }, 2000);
+
+
+  }
+
+
+  function isUserAvailable(){
+    let presence = JSON.parse(localStorage.getItem("user-data"))||0
+    if(presence==0){
+        return
+    }else{
+        window.location.href="../danshboard.html"
+    }
   }

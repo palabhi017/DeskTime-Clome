@@ -10,7 +10,15 @@ import fot from '/components/fot.js';
 let footer=document.getElementById('footer');
 footer.innerHTML=fot();
 
+<<<<<<< HEAD
 // <!-- Demo 4 cards -->
+=======
+// <!-- import scrolling cards -->
+import msgbox from '/components/massagebox.js';
+
+let scroll_box=document.getElementById('bigmsg');
+scroll_box.innerHTML=msgbox();
+>>>>>>> 440f8c912520b7d8725ffb3e5f2dd1d3dad55f4b
 
 
 

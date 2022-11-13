@@ -65,7 +65,7 @@ function fot(){
 </div>
 
 
-<img src="/assets/footer_desktime.png" alt="">`
+<img src="/assets/footer.png" alt="">`
 }
 
 export default fot

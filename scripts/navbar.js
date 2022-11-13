@@ -1,6 +1,6 @@
-setTimeout(() => {
+window.onload=()=>{
 
-
+    isUserAvailable()
     // do your all navbar functionalities here 
 
     document.querySelector("#logo").onclick=()=>{
@@ -14,8 +14,41 @@ setTimeout(() => {
 
     //for register btn
     document.querySelector("#signup_btn").onclick=()=>{
-        window.location.href="../register.html"
+        if(document.querySelector("#signup_btn").innerText=="SIGN UP"){
+            window.location.href="../register.html"
+
+
+        }else{
+            window.location.href="../danshboard.html"
+            // setUserArrivalTime()
+
+        }
     }
 
+    function isUserAvailable(){
+        let presence = JSON.parse(localStorage.getItem("user-data"))||0
+        if(presence==0){
+            return
+        }else{
+            document.querySelector("#signup_btn").innerText= "DASHBOARD"
+
+            document.querySelector("#login_btn").style.display="none"
+
+            
+        }
+      }
+
+
     
+<<<<<<< HEAD
 }, 1000);
+=======
+
+}
+
+
+
+ 
+
+    
+>>>>>>> 440f8c912520b7d8725ffb3e5f2dd1d3dad55f4b
