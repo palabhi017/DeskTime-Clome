@@ -85,7 +85,7 @@
     position: absolute;
     top: -110%;
     left:35%;
-    transition: translate(0%,125%) scale(0);
+    transition: translate(0%,120%) scale(0);
     z-index: 2;
 }
 .popup.active .overlay{
@@ -93,5 +93,5 @@
 }
 .popup.active .content{
     transition: all 700ms ease-in-out;
-    transform: translate(0%,125%) scale(1);
+    transform: translate(0%,120%) scale(1);
 } 

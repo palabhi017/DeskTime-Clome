@@ -43,6 +43,7 @@ document.querySelector("#desktime").onclick = (event) => {
   content.innerHTML = "";
   content.innerHTML = timeAlways();
   desktop();
+  setStats()
 };
 document.querySelector("#projects").onclick = (event) => {
   projectsFun();
@@ -135,7 +136,26 @@ function desktop() {
 
   function appendData() {
     stats.innerHTML = "";
-    let arr = [user_at, user_lt, 0, 0, 0, 0, 0, 0];
+
+    
+
+    function returnAMPM(time){
+    try {
+      let x = time.split(":");
+      if(x[0]>=12){
+       return " PM"
+ 
+      }else{
+       return " AM"
+      }
+      
+    } catch (error) {
+      return ""
+    }
+
+    }
+
+    let arr = [user_at+returnAMPM(user_at), user_lt+returnAMPM(user_lt), 0, 0, 0, 0, 0, 0];
     let names = [
       "Arrival Time",
       "Left Time",
@@ -162,6 +182,12 @@ function desktop() {
     }
     console.log("working");
   }
+
+  
+
+  document.querySelector("#date").innerHTML=fullDateFormat()
+  utilityContols()
+
 }
 
 function exports() {
@@ -171,6 +197,7 @@ function exports() {
   document.querySelector("#footer").innerHTML = fot();
   document.querySelector("#utility-1").style.width = "95%";
   document.querySelector("#utility-1").style.margin = "auto";
+  utilityContols()
 }
 
 function projectsFun() {
@@ -206,7 +233,7 @@ function projectsFun() {
           if (
             el.name
               .toLowerCase()
-              .includes(document.querySelector("#project-name").value)
+              .includes(document.querySelector("#project-name").value.toLowerCase())
           ) {
             return el;
           }
@@ -284,6 +311,8 @@ function projectsFun() {
       pushNewProject(userData, nuser);
     }
   };
+
+  utilityContols()
 }
 
 function close() {
@@ -438,8 +467,41 @@ function appendProjects(data) {
 
     let editIcon = document.createElement("i");
     editIcon.setAttribute("class", "fa-solid fa-pen-to-square");
+    editIcon.style.display="none"
     let dIcon = document.createElement("i");
+    dIcon.style.cursor="pointer"
+
     dIcon.setAttribute("class", "fa-solid fa-trash-can");
+
+
+
+    dIcon.onclick=async()=>{
+
+
+      data.splice(index,1);
+      let user = JSON.parse(localStorage.getItem("user-data"));
+      let res=await fetch(`${BASE_URL}/users/${user.id}`)
+      let fetchedData = await res.json();
+      fetchedData.projects=data;
+      fetchedData.ptm=fetchedData.ptm-1
+      fetchedData.ptw=fetchedData.ptw-1
+
+      let newRes = await fetch(`${BASE_URL}/users/${user.id}`,{
+        method:"PATCH",
+        body:JSON.stringify(fetchedData),
+        headers:{
+          "Content-Type":"application/json"
+        }
+      })
+
+      let result = await newRes.json();
+      // appendProjects(result.projects)
+      projectsFun()
+
+      
+
+    }
+
     sdiv.append(editIcon, dIcon);
     div.append(fdiv, date, logo, taskCount, sdiv);
     allProjects.append(div);
@@ -457,6 +519,7 @@ function reports() {
   let Product_btn = document.getElementById("productive");
   let pmodal = document.getElementById("productive_div");
   let span = document.getElementsByClassName("close-view-card")[0];
+  document.querySelector("#date").innerText=fullDateFormat()
   Product_btn.onclick = function () {
     pmodal.style.display = "block";
     // console.log('go it');
@@ -741,11 +804,23 @@ async function getCurrentUserData() {
   return actual_data;
 }
 
-let productive = [];
-let unproductive = [];
-let neutral = [];
+
 
 async function setStats() {
+  let productive = [];
+let unproductive = [];
+let neutral = [];
+  let proTime=null
+  let unproTime =null
+  let neuTime=null
+  let finalProductiveTime =null
+  let finalUnproductiveTime=null
+  let finalNeutralTime =null
+  let totalUnproductiveTime
+  let totalProductiveTime=null
+  let totalNeutralTime=null
+  let finalDeskTime=null
+  let productivityPercentage =null
   let data = await getCurrentUserData();
 
   let taskData = data.projects;
@@ -764,35 +839,35 @@ async function setStats() {
 
   // console.log(productive,unproductive,neutral)
 
-  let totalProductiveTime = appendTask("#productive_apps>div", productive);
+  totalProductiveTime = appendTask("#productive_apps>div", productive);
 
-  let totalUnproductiveTime = appendTask(
+  totalUnproductiveTime = appendTask(
     "#unproductive_apps>div",
     unproductive
   );
 
-  let totalNeutralTime = appendTask("#neutral_apps>div", neutral);
+   totalNeutralTime = appendTask("#neutral_apps>div", neutral);
 
-  let proTime = calculateAccurateTime(
+  proTime= calculateAccurateTime(
     totalProductiveTime.th,
     totalProductiveTime.tm,
     totalProductiveTime.ts
   );
-  let unproTime = calculateAccurateTime(
+ unproTime= calculateAccurateTime(
     totalUnproductiveTime.th,
     totalUnproductiveTime.tm,
     totalUnproductiveTime.ts
   );
-  let neuTime = calculateAccurateTime(
+neuTime = calculateAccurateTime(
     totalNeutralTime.th,
     totalNeutralTime.tm,
     totalNeutralTime.ts
   );
 
-  let finalProductiveTime = `${proTime.h}h ${proTime.m}m ${proTime.s}s`;
-  let finalUnproductiveTime = `${unproTime.h}h ${unproTime.m}m ${unproTime.s}s`;
-  let finalNeutralTime = `${neuTime.h}h ${neuTime.m}m ${neuTime.s}s`;
-  let finalDeskTime = calculateAccurateTime(
+  finalProductiveTime= `${proTime.h}h ${proTime.m}m ${proTime.s}s`;
+  finalUnproductiveTime = `${unproTime.h}h ${unproTime.m}m ${unproTime.s}s`;
+ finalNeutralTime = `${neuTime.h}h ${neuTime.m}m ${neuTime.s}s`;
+   finalDeskTime = calculateAccurateTime(
     proTime.h + unproTime.h + neuTime.h,
     proTime.m + unproTime.m + neuTime.m,
     proTime.s + unproTime.s + neuTime.s
@@ -811,10 +886,10 @@ async function setStats() {
   document.querySelector("#d6").innerHTML =
     (Math.random() * 100).toFixed(1) + " %";
 
-  let productivityPercentage =
-    ((proTime.h * 60 + proTime.m + proTime.s / 60) /
+  productivityPercentage =
+    (((proTime.h * 60 + proTime.m + proTime.s / 60) /
       (finalDeskTime.h * 60 + finalDeskTime.m + finalDeskTime.s / 60)) *
-    100;
+    100)||0
   document.querySelector("#d7").innerHTML =
     productivityPercentage.toFixed(1) + " %";
 
@@ -877,4 +952,56 @@ function calculateAccurateTime(h, m, s) {
   h += hrs;
   m += min;
   return { h, m, s };
+}
+
+
+function fullDateFormat(){
+  let Date =myDate()
+  let x=Date.split("-");
+  console.log(x)
+  let obj={
+    "1":"January",
+    "2":"Februrary",
+    "3":"March",
+    "4":"April",
+    "5":"May",
+    "6":"June",
+    "7":"July",
+    "8":"August",
+    "9":"September",
+    "10":"October",
+    "11":"November",
+    "12":"December"
+  }
+
+  let makeDate = `${obj[x[1]]} ${x[0]}, ${x[2]}`
+  return makeDate
+}
+
+function utilityContols(){
+  document.querySelector("#stt").onclick=()=>{
+    document.querySelector("#play").click()
+
+  }
+
+  document.querySelector("#create").onclick=()=>{
+    document.querySelector("#projects").click()
+    setTimeout(() => {
+      document.querySelector("#new-project-btn").click()
+
+      
+    }, 500);
+
+  }
+  document.querySelector("#desktop-app").onclick=()=>{
+    window.location.href="https://desktime.com/download"
+
+  }
+
+  document.querySelector("#wt").onclick=()=>{
+    document.querySelector("#play").click()
+
+  }
+
+
 }
