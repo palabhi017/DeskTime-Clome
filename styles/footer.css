@@ -33,7 +33,21 @@
 }
 
 @media all  and (min-width:360px) and (max-width:990px) {
-    #footer{
-        display: none;
+    #footer_child{
+       
+        flex-direction: column;
+        margin-top: 40px;
+    
     }
+    #footer_child>div{
+        align-items: center;
+    }
+
+    
+#footer>img{
+    width: 100%;
+    height: 50px;
+
+    margin-top: 50px;
+}
 }

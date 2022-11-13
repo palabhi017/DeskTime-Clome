@@ -445,24 +445,45 @@ padding: 50px 100px;
         font-size: 3vw;
         
     }
+
+    /* my work */
     #content>input{
-        margin:5px;
-        width: 70%;
-       
+       width: 100%;
     }
     #content>button{
-        width: 70%;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 8px;
        
     }
+
+    #content{
+        width: 100%;
+        padding-left: 0%;
+        padding: 8px;
+
+        
+    }
     
+
+
     #promo{
-        padding-left: 10px;
+        /* padding-left: 10px; */
+        width: 100%;
         width: auto;
     }
     #promo>iframe{
-        width: 500px;
-        height: 300px;
+        width: 100%;
+        height: auto;
     }
+
+    .smallp{
+        font-size: 15px;
+        line-height: 15px;
+        color: #475056;
+    }
+
+    /* finish */
     #logos{
        
         display: none;
