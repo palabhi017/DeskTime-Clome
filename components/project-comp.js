@@ -56,7 +56,7 @@ function project_comp(){
             </div>
             <div>
                 <h4>Date created</h4>
-                <input id="date-created" type="text" placeholder="Date created">
+                <input id="date-created" type="number" placeholder="Date created">
             </div>
             <div>
                 <h4>Integration</h4>

@@ -19,9 +19,13 @@
 
 }
 #stats>div{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding: 16px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    padding: 16px;
+    
     color: #999da1;
+}
+
+#stats>div>h1{
+    color: #4EA819;
 }
 
 #date-sort{
@@ -93,9 +97,11 @@ h5{
     
 }
 #productive_apps>div{
-padding: 16px 0px;    
-display: grid;
-grid-template-columns: repeat(4,1fr);
+padding: 16px 8px;    
+display: grid;    
+ gap: 20px;
+
+grid-template-columns: repeat(3,1fr);
 }
 
 #productive_apps>div>div{
@@ -114,9 +120,10 @@ grid-template-columns: repeat(4,1fr);
 
 
 #unproductive_apps>div{
-    padding: 16px 0px;    
+    padding: 16px 8px;    
+    gap: 20px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);}
+    grid-template-columns: repeat(3,1fr);}
 
 
 #unproductive_apps>div>div{
@@ -135,9 +142,10 @@ grid-template-columns: repeat(4,1fr);
 
 
 #neutral_apps>div{
-     padding: 16px 0px;    
+     padding: 16px 8px;    
      display: grid;
-    grid-template-columns: repeat(4,1fr);
+     gap: 20px;
+    grid-template-columns: repeat(3,1fr);
  }
 
  #neutral_apps>div>div{
