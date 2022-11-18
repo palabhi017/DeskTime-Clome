@@ -1,5 +1,7 @@
 import nav from "../components/nav.js";
 import fot from "../components/fot.js";
+import Presenter from "../Presenter/presenter.js";
+
 
 document.querySelector("#navbar").innerHTML=nav()
 document.querySelector("#footer").innerHTML=fot()
@@ -86,3 +88,5 @@ function showError(error) {
         window.location.href="../danshboard.html"
     }
   }
+
+  
