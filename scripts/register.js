@@ -1,6 +1,8 @@
 import nav from "../components/nav.js";
 import fot from "../components/fot.js";
 import Presenter from "../Presenter/presenter.js";
+import { BaseUrl } from "./base_url.js";
+
 
 
 document.querySelector("#navbar").innerHTML = nav();
@@ -9,7 +11,7 @@ isUserAvailable();
 
 let userData = [];
 
-const BASE_URL = "https://boiling-basin-61695.herokuapp.com";
+const BASE_URL = BaseUrl();
 getUserBase();
 
 async function getUserBase() {
