@@ -7,6 +7,8 @@ import report_comp from "../components/report-comp.js";
 import ScriptLoader from "../components/script-loader.js";
 import timeAlways from "../components/time-always-comp.js";
 import utility from "../components/utility-tab.js";
+import { BaseUrl } from "./base_url.js";
+
 
 let wsTogggle = 0;
 let acTogggle = 0;
@@ -17,7 +19,7 @@ let createToggle = 0;
 
 let id;
 let projectsData = [];
-const BASE_URL = "https://boiling-basin-61695.herokuapp.com";
+const BASE_URL = BaseUrl();
 
 // let loader=new ScriptLoader("/scripts/time-always.js");
 
@@ -108,7 +110,7 @@ function desktop() {
 
   let user = JSON.parse(localStorage.getItem("user-data"));
   let stats = document.querySelector("#stats");
-  const BASE_URL = "https://boiling-basin-61695.herokuapp.com";
+  const BASE_URL = BaseUrl();
   let user_projects = [];
 
   let user_at = 0;
@@ -397,7 +399,7 @@ function myDate() {
 }
 
 async function setUserArrivalTime() {
-  const BASE_URL = "https://boiling-basin-61695.herokuapp.com";
+  const BASE_URL = BaseUrl();
   let d = new Date();
   let user = JSON.parse(localStorage.getItem("user-data"));
   console.log("user-arrived");
@@ -420,7 +422,7 @@ async function setUserArrivalTime() {
 
 function enableLeftTime() {
   setInterval(async () => {
-    const BASE_URL = "https://boiling-basin-61695.herokuapp.com";
+    const BASE_URL = BaseUrl();
     let d = new Date();
     let user = JSON.parse(localStorage.getItem("user-data"));
     console.log("user-arrived");
