@@ -17,3 +17,6 @@ Time Always helps you to track your productive and unproductive time and calcula
 --Reusable components
 --Expandable and Shirnkable side Navbar.
 --Filter Projects by name and date.
+
+#Deployed Link
+<a href="https://time-always.netlify.app/">Demo</a>
