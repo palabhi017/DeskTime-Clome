@@ -2,7 +2,7 @@
 Clone of Desktime.com. It was our collaborative construct week project and we completed this in the span of 5 days in Masai. 
 Time Always helps you to track your productive and unproductive time and calculate your productivity and effectiveness in your work.
 
-<center><img src="" width="90%"></img></center>
+<center><img src="https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta4.png?raw=true" width="90%"></img></center>
 
 
 # Tech-Stack
