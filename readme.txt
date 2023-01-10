@@ -1,12 +1,15 @@
+# Time-Always
 Clone of Desktime.com. It was our collaborative construct week project and we completed this in the span of 5 days in Masai. 
-
 Time Always helps you to track your productive and unproductive time and calculate your productivity and effectiveness in your work.
 
-Tech-Stack:-
+<center><img src="" width="90%"></img></center>
+
+
+# Tech-Stack
  --Front-end---> HTML+CSS+JS
  --Back-end----> Heroku
 
-Features:-
+# Features 
 --User-specific
 --Email and Password Validation in the Signup form using Regex.
 --Dashboard to track your total Productive and Unproductive time.
